@@ -11,6 +11,7 @@ public class Hospital {
         this.wards = new ArrayList<>();
     }
     
+
     public Team getTeam(int idTeam)
     {
         for (Team team : this.teams)
