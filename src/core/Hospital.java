@@ -30,4 +30,16 @@ public class Hospital {
         team.addDoctor(new ConsultantDoctor(CDId, team));
         teams.add(team);
     }
+    
+    public void addJuniorDoctor(Team team, int idDoctor)
+    {
+        JuniorDoctor junior = new JuniorDoctor(idDoctor, team);
+        for (Team searchTeam : this.teams)
+        {
+            if (searchTeam.getId() == team.getId())
+            {
+                searchTeam.addDoctor(junior);
+            }
+        }
+    }
 }

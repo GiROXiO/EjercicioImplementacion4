@@ -7,7 +7,7 @@ public class Team {
     private ArrayList<Doctor> doctors;
     private ConsultantDoctor teamLeader;
     private ArrayList<Patient> patients;
-
+    
     public Team(int id) {
         this.id = id;
         this.doctors = new ArrayList<>();
