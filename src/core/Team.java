@@ -14,4 +14,17 @@ public class Team {
         this.teamLeader = null;
         this.patients = new ArrayList<>();
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public ConsultantDoctor getTeamLeader() {
+        return teamLeader;
+    }
+    
+    public void addDoctor(Doctor doctor)
+    {
+        doctors.add(doctor);
+    }
 }

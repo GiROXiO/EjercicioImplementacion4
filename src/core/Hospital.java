@@ -10,4 +10,23 @@ public class Hospital {
         this.teams = new ArrayList<>();
         this.wards = new ArrayList<>();
     }
+    
+    public Team getTeam(int idTeam)
+    {
+        for (Team team : this.teams)
+        {
+            if (team.getId() == idTeam)
+            {
+                return team;
+            }
+        }
+        return null;
+    }
+    
+    public void addTeam(int idTeam, int CDId)
+    {
+        Team team = new Team(idTeam);
+        team.addDoctor(new ConsultantDoctor(CDId, team));
+        teams.add(team);
+    }
 }
