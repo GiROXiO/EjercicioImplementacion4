@@ -1,13 +1,9 @@
-<<<<<<< HEAD:src/main/Main4.java
-=======
 package main;
 
 
->>>>>>> b52b862592d9c705ce89e102bb8695f6b083e843:src/main/Main.java
-
 import core.Hospital;
 
-public class Main4 {
+public class Main {
     
     public static void main(String[] args) {
         Hospital hospital = new Hospital();

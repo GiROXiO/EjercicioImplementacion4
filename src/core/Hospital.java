@@ -33,7 +33,7 @@ public class Hospital {
     
     public void addJuniorDoctor(Team team, int idDoctor)
     {
-        JuniorDoctor junior = new JuniorDoctor(idDoctor, team);
+        JuniorDoctor junior = new JuniorDoctor(team, idDoctor);
         for (Team searchTeam : this.teams)
         {
             if (searchTeam.getId() == team.getId())
@@ -41,5 +41,9 @@ public class Hospital {
                 searchTeam.addDoctor(junior);
             }
         }
+    }
+    
+    public void addWard(int id){
+        this.wards.add(new Ward(id));
     }
 }

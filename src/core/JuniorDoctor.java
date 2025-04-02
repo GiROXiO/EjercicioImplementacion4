@@ -1,7 +1,7 @@
 package core;
 
 public class JuniorDoctor extends Doctor {
-    public JuniorDoctor(int id, Team team) {
+    public JuniorDoctor(Team team, int id) {
         super(id, team);
     }
 }
