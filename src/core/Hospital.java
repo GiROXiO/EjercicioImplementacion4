@@ -30,4 +30,8 @@ public class Hospital {
         team.addDoctor(new ConsultantDoctor(CDId, team));
         teams.add(team);
     }
+    
+    public void addWard(int id){
+        this.wards.add(new Ward(id));
+    }
 }
