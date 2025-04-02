@@ -46,4 +46,19 @@ public class Hospital {
     public void addWard(int id){
         this.wards.add(new Ward(id));
     }
+    
+    public Patient getPatient(int idPatient)
+    {
+        for (Team team : this.teams)
+        {
+            for (Patient patient : team.getPatients())
+            {
+                if (patient.getId() == idPatient)
+                {
+                    return patient;
+                }
+            }
+        }
+        return null;
+    }
 }

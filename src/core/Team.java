@@ -19,6 +19,10 @@ public class Team {
         return id;
     }
 
+    public ArrayList<Patient> getPatients() {
+        return patients;
+    }
+
     public ConsultantDoctor getTeamLeader() {
         return teamLeader;
     }

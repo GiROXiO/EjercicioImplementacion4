@@ -23,4 +23,10 @@ public class Patient {
         this.appoiments = new ArrayList<>();
         this.doctors = new ArrayList<>();
     }
+
+    public int getId() {
+        return id;
+    }
+    
+    
 }
