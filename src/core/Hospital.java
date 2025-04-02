@@ -10,4 +10,6 @@ public class Hospital {
         this.teams = new ArrayList<>();
         this.wards = new ArrayList<>();
     }
+    
+    
 }
